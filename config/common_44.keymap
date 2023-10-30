@@ -23,15 +23,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
-//                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
+// |  GUI | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
+//        | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
+//        | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
+//                           | GUI | LWR | SPC |   | BKSP| LWR  |SHIFT|
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
-            &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-            &kp LALT  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+   &kp LWIN &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp Y              &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
+            &kp ESC   &kp A &kp S &kp D &kp F &kp G &kp H              &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
+            &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N              &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
+                               &kp LWIN &lt LWR RET &kp SPACE      &kp BSPC &lt RSE ESC &kp RSHIFT
                         >;
                 };
                 lower_layer {
