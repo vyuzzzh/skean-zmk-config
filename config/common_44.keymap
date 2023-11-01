@@ -24,38 +24,39 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  ALT |
+//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
+//        | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  ALT |
 //                           | GUI | LWR | SPC |   | BKSP| RSE  |SHIFT|
                         bindings = <
    &kp LWIN  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y              &kp U  &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
-             &kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G  &kp H              &kp J  &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-             &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N              &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
-                              &lt RSE TAB  &lt LWIN SPACE  &lt LWR RET  &lt RSE ESC  &mt RSHFT BSPC &lt RSE DEL
+             &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H              &kp J  &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+             &kp LALT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N              &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
+                              &lt ADJ TAB  &mt LWIN SPACE  &lt LWR RET  &lt RSE ESC  &mt RSHFT BSPC &lt ADJ DEL
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | BLDR|     |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     |     |
+// |     |     |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     |     |
 //       |     |     | LEFT|  UP | RGHT|     |   |     |     |     |     |     |     |
 //       |     |     | END | DOWN| PGDN|     |   |     |     |     |     |     |     |
 //                         |     |     |     |   |     |     |     |
                         bindings = <
-   &bootloader  &trans  &kp N3  &kp N2    &kp N1    &kp N0     &kp N4                   &kp N7   &kp N6  &kp N5  &kp N9  &kp N8  &trans  &trans
+        &trans  &trans  &kp N3  &kp N2    &kp N1    &kp N0     &kp N4                   &kp N7   &kp N6  &kp N5  &kp N9  &kp N8  &trans  &trans
                 &trans  &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans                   &trans   &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans                   &trans   &trans  &trans  &trans  &trans  &trans
-                                                       &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
+                                                       &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |      |  `  |  <  |  =  |  >  | "|" |   |  &  |  [  |  _  |  ]  |  #  |     | BLDR|
+// |     |      |  `  |  <  |  =  |  >  | "|" |   |  &  |  [  |  _  |  ]  |  #  |     |     |
 //       |      |  ~  |  (  |  -  |  )  |  +  |   |  $  |  {  |  :  |  }  |  ;  |     |
 //       |      |  ^  |  '  |  *  |  "  |  @  |   |  %  |  ?  |  !  |  \  |     |     |
 //                          |     |     | ADJ |   | ADJ |     |     |
                         bindings = <
-   &trans  &trans  &kp GRAVE  &kp LT    &kp EQUAL  &kp GT    &kp PIPE                    &kp AMPS   &kp LBKT   &kp UNDER  &kp RBKT  &kp HASH  &trans  &bootloader
+   &trans  &trans  &kp GRAVE  &kp LT    &kp EQUAL  &kp GT    &kp PIPE                    &kp AMPS   &kp LBKT   &kp UNDER  &kp RBKT  &kp HASH  &trans  &trans
            &trans  &kp TILDE  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                    &kp DLLR   &kp LBRC   &kp COLON  &kp RBRC  &kp SEMI  &trans
            &trans  &kp CARET  &kp SQT   &kp STAR   &kp DQT   &kp AT                      &kp PRCNT  &kp QMARK  &kp EXCL   &kp BSLH  &trans    &trans
                                                    &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
@@ -64,12 +65,12 @@
 
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | DEF |      |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     |      |
+// | BLDR|      |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     | BLDR|
 //       |      | GUI | ALT |CTRL |SHIFT| F11 |   | F12 |SHIFT| CTRL| ALT | GUI | APP |
 //       |      |  F1 |  F2 |  F3 |  F4 |  F5 |   | F6  | F7  | F8  | F9  | F10 |     |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-   &tog ADJ  &trans  &kp N3    &kp N2    &kp N1     &kp N0      &kp N4            &kp N7   &kp N6      &kp N5     &kp N9    &kp N8    &trans           &trans
+ &bootloader &trans  &kp N3    &kp N2    &kp N1     &kp N0      &kp N4            &kp N7   &kp N6      &kp N5     &kp N9    &kp N8    &trans           &bootloader
              &trans  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp F11           &kp F12  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LWIN  &mt RCTRL K_APP
              &trans  &kp F1    &kp F2    &kp F3     &kp F4      &kp F5            &kp F6   &kp F7      &kp F8     &kp F9    &kp F10   &trans
                                                  &trans  &trans  &trans      &trans  &trans  &trans
