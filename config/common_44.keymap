@@ -23,27 +23,27 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  ALT |
-//                           | GUI | LWR | SPC |   | BKSP| RSE  |SHIFT|
+// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  | I  |  O  |  P  |  [   | GUI/] |
+//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  | K  |  L  |  ;  |CTRL/'|
+//        | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  | ,  |  .  |  /  |  ALT |
+//                           | TAB |SHIFT| RET |   | ESC |SHIFT|DEL |
                         bindings = <
    &kp LWIN  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y              &kp U  &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
              &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H              &kp J  &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
              &kp LALT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N              &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
-                              &lt ADJ TAB  &mt LWIN SPACE  &lt LWR RET  &lt RSE ESC  &mt RSHFT BSPC &lt ADJ DEL
+                              &lt ADJ TAB  &mt LSHFT SPACE  &lt LWR RET  &lt RSE ESC  &mt RSHFT BSPC &lt ADJ DEL
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     |     |
-//       |     |     | LEFT|  UP | RGHT|     |   |     |     |     |     |     |     |
+//       |     |     | LEFT|  UP | RGHT|     |   | MUT |VOLD |VOLU |PAUS |     |     |
 //       |     |     | END | DOWN| PGDN|     |   |     |     |     |     |     |     |
 //                         |     |     |     |   |     |     |     |
                         bindings = <
         &trans  &trans  &kp N3  &kp N2    &kp N1    &kp N0     &kp N4                   &kp N7   &kp N6  &kp N5  &kp N9  &kp N8  &trans  &trans
-                &trans  &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans                   &trans   &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp PAUSE_BREAK  &trans  &trans
                 &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans                   &trans   &trans  &trans  &trans  &trans  &trans
                                                        &trans &trans &trans   &trans &trans &trans
                         >;
