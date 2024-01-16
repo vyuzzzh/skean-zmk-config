@@ -37,15 +37,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |     |     |
+// |     |BTCLR|  3  |  2  |  1  |  0  |  4  |   |  7  |  6  |  5  |  9  |  8  |BTCLR|     |
 //       |     |     | LEFT|  UP | RGHT|     |   | MUT |VOLD |VOLU |PAUS |     |     |
-//       |     |     | END | DOWN| PGDN|     |   |     |     |     |     |     |     |
+//       |BT0  |BT1  | END | DOWN| PGDN|     |   |     |     |     |     |BT1  |BT0  |
 //                         |     |     |     |   |     |     |     |
                         bindings = <
-        &trans  &trans  &kp N3  &kp N2    &kp N1    &kp N0     &kp N4                   &kp N7   &kp N6  &kp N5  &kp N9  &kp N8  &trans  &trans
-                &trans  &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp PAUSE_BREAK  &trans  &trans
-                &trans  &trans  &kp END   &kp DOWN  &kp PG_DN  &trans                   &trans   &trans  &trans  &trans  &trans  &trans
-                                                       &trans &trans &trans   &trans &trans &trans
+        &trans  &bt BT_CLR    &kp N3        &kp N2    &kp N1    &kp N0     &kp N4                   &kp N7   &kp N6  &kp N5  &kp N9  &kp N8  &trans  &bt BT_CLR
+                &trans        &trans        &kp LEFT  &kp UP    &kp RIGHT  &trans                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp PAUSE_BREAK  &trans  &trans
+                &bt BT_SEL 0  &bt BT_SEL 1  &kp END   &kp DOWN  &kp PG_DN  &trans                   &trans   &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 0
+                                                                    &trans &trans &trans     &trans &trans &trans
                         >;
                 };
 
