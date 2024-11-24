@@ -18,8 +18,8 @@ include:
   - board: skean_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: skean-left-studio
+    artifact-name: skean_left_studio
   - board: skean_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: skean-right-studio
+    artifact-name: skean_right_studio
