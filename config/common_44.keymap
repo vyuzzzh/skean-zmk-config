@@ -71,13 +71,13 @@
                         display-name = "SYM";
 // -----------------------------------------------------------------------------------------
 // |     |      |  `  |  <  |  -  |  >  | "|" |   |  &  |  (  |  _  |  )  |     |     |     |
-//       |      |  ~  |  (  |  =  |  )  |  +  |   |  $  |  {  |  :  |  }  |  ;  |     |
-//       |      |  ^  |  '  |  *  |  "  |  @  |   |  %  |  #  |  !  |     |  ?  |     |
+//       |      |  ~  |  (  |  =  |  )  |  +  |   |  $  |  {  |  :  |  }  |  ;  |  !  |
+//       |      |  ^  |  '  |  *  |  "  |  @  |   |  %  |  #  |  ,  |  .  |  ?  |  \  |
 //                         | ADJ  |     |     |   |     |     | ADJ |
                         bindings = <
    &trans  &trans  &kp GRAVE  &kp LT    &kp MINUS  &kp GT    &kp PIPE                   &kp AMPS   &kp LPAR   &kp UNDER  &kp RPAR  &trans    &trans  &trans
-           &trans  &kp TILDE  &kp LPAR  &kp EQUAL  &kp RPAR  &kp PLUS                   &kp DLLR   &kp LBRC   &kp COLON  &kp RBRC  &kp SEMI  &trans
-           &trans  &kp CARET  &kp SQT   &kp STAR   &kp DQT   &kp AT                     &kp PRCNT  &kp HASH   &kp EXCL   &trans    &kp QMARK &trans
+           &trans  &kp TILDE  &kp LPAR  &kp EQUAL  &kp RPAR  &kp PLUS                   &kp DLLR   &kp LBRC   &kp COLON  &kp RBRC  &kp SEMI  &kp EXCL
+           &trans  &kp CARET  &kp SQT   &kp STAR   &kp DQT   &kp AT                     &kp PRCNT  &kp HASH   &kp COMMA  &kp DOT   &kp QMARK &kp BSLH
                                                    &trans &trans &trans          &trans &trans &trans
                         >;
                 };
