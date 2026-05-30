@@ -26,7 +26,7 @@
             tap-ms = <0>;
             bindings =
                 <&macro_press &kp F24>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&macro_press &mo LWR>,
                 <&macro_pause_for_release>,
                 <&macro_release &mo LWR &kp F24>;
